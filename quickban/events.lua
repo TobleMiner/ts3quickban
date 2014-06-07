@@ -10,7 +10,7 @@ local function onClientMove(serverConnectionHandlerID, clientID, oldChannelID, n
 			obj = {}
 			obj.cid = clientID
 			obj.sid = serverConnectionHandlerID
-			table.insert(server, clientID)
+			table.insert(server, obj)
 		else
 			if(ts3.getChannelOfClient(serverConnectionHandlerID, clientID) == ts3.getChannelOfClient(serverConnectionHandlerID, me)) then
 				obj = {}
